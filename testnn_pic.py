@@ -12,7 +12,6 @@ mnist = tf.keras.datasets.mnist
 x_train = tf.keras.utils.normalize(x_train, axis=1)
 x_test = tf.keras.utils.normalize(x_test, axis=1)
 
-# Címkék one-hot kódolása
 y_train = to_categorical(y_train, num_classes=10)
 y_test = to_categorical(y_test, num_classes=10)
 

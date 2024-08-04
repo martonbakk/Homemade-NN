@@ -7,14 +7,6 @@ from network import Network
 prep_x_train= np.reshape([[0,0], [0, 1], [1, 0], [1, 1]], (4,2,1))
 prep_y_train= np.reshape([[0], [1], [1], [0]], (4,1,1))
 
-
-network=[
-    Dense(2,3),
-    Tanh(),
-    Dense(3,1),
-    Tanh()
-]
-
 network=Network()
 network.add_layer(Dense(2, 3))
 network.add_layer(Tanh())
