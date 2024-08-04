@@ -38,9 +38,9 @@ network.add_layer(Dense(128, 10))
 network.add_layer(Tanh())
 
 
-epochs = 2
+epochs = 10
 learning_rate = 0.1
 res=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 network.train(prep_x_train, prep_y_train,epochs, learning_rate)
-network.run(prep_x_test, prep_y_test, res, images)
+network.run(data=prep_x_test, expected_res=prep_y_test, options=res, images=images)
