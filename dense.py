@@ -15,13 +15,7 @@ class Dense(Layer):
         return np.dot(self.weights, self.input)+self.bias   #Matrix multiplication --W*X+B--
     
     def backward(self, output_gradient, learning_rate):         #output gradient= del(E)/del(Y)   
-        #print("output_gradient")
-        #print(output_gradient)
         weights_gradient=np.dot(output_gradient, self.input.T)  #calculate the weights grad
-        #print("weights_gradient")
-        #print(weights_gradient) 
         self.weights-=learning_rate*weights_gradient            #adjustment
         self.bias-=learning_rate*output_gradient                #adjustmen
-        #print("self.bias")
-        #print(self.bias)
         return np.dot(self.weights.T, output_gradient)          #send to the before layer
