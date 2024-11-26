@@ -56,9 +56,6 @@ These scripts illustrate how to define network architectures, specify activation
 
 Contributions are welcome! Feel free to fork the repository, make enhancements, and submit pull requests. For major changes, please open an issue to discuss your ideas.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
